@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+@CrossOrigin(origins = "*")
 @RestController
-
 @RequestMapping("/task")
 public class TaskController {
     @Autowired
     TaskService taskService;
+
 
     @GetMapping("")
     public List<Task> getAllTasks(){
