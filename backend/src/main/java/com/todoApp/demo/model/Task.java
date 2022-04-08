@@ -9,12 +9,13 @@ import java.util.Date;
 public class Task {
     private int id;
     private String name;
+    private int active;
     private Date created_date;
 
     public Task() {
     }
 
-    public Task(int id, String name, Date createdDate) {
+    public Task(int id, String name, int active, Date createdDate) {
         this.id = id;
         this.name = name;
         this.created_date = createdDate;
@@ -37,6 +38,14 @@ public class Task {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getActive() {
+        return active;
+    }
+
+    public void setActive(int active) {
+        this.active = active;
     }
 
     public Date getCreated_date() {
