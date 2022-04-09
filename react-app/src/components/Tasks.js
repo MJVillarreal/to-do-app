@@ -29,8 +29,6 @@ function Tasks() {
     getAllTasks();
   }, []);
 
-  const setDate = (date) => new Date(date).toLocaleDateString();
-
   const createNewTask = (event) => {
     event.preventDefault();
 
@@ -167,7 +165,7 @@ function Tasks() {
                     variant="outlined"
                     defaultValue={task.name}
                     onInput={validateInput}
-                    helperText={inputError ? "Name cannot be empty" : ""}
+                    helperText={inputError ? "Task name cannot be empty" : ""}
                   />
                 ) : (
                   <p>{task.name}</p>

@@ -21,8 +21,9 @@ sudo apt install default-jre
 cd /backend
 mvn spring-boot:run
 
-#7 Install web app dependencies
+# 7. Install web app dependencies
+cd ../react-app
 npm install
 
-#8 Run project
+# 8. Run project
 npm run start
