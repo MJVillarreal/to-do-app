@@ -166,6 +166,7 @@ function Tasks() {
                     defaultValue={task.name}
                     onInput={validateInput}
                     helperText={inputError ? "Task name cannot be empty" : ""}
+                    autoComplete="off"
                   />
                 ) : (
                   <p>{task.name}</p>
