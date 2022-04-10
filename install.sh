@@ -1,7 +1,5 @@
 sudo apt update
 
-# MySql
-
 # 1. Install MySql server
 sudo apt install mysql-server
 
