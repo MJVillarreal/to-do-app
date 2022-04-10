@@ -21,7 +21,7 @@ mvn install
 sudo apt install default-jre
 
 # 7. Run Spring Project
-cd /backend
+cd backend/
 mvn spring-boot:run
 
 # 8. Install web app dependencies
