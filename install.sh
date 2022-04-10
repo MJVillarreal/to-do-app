@@ -13,7 +13,7 @@ mysql -sfu root < "mysql_secure_installation.sql"
 mysql -u root -p to-do-schema < schema.sql
 
 # 5. Install Maven
-mvn install
+sudo apt-get install maven
 
 # 6. Install Java
 sudo apt install default-jre
